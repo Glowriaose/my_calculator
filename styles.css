@@ -1,0 +1,99 @@
+body {
+  background-image: url('https://source.unsplash.com/random');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'popins, sans-serif';
+}
+.wrapper {
+  max-width: 380px;
+  height: 85vh;
+  margin: 3em auto;
+  background-color: #3a4453;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4em 0 3em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button {
+  border: none;
+  outline: 0;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.8em;
+  box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.1),
+    5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  max-width: 100%;
+  min-height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 0.3em;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.63em;
+  overflow: hidden;
+  text-wrap: wrap;
+}
+
+.buttons .result-btn {
+  width: 100%;
+  height: 110px;
+  margin: 0.8em;
+}
+
+.buttons .clear,
+.buttons .delete,
+.buttons .remainder,
+.buttons .dot,
+.display-text {
+  text-align: center;
+  color: goldenrod;
+}
+
+.buttons .result-btn {
+  background-color: goldenrod;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    max-width: 100%;
+    height: 95vh;
+    margin: 3em;
+    padding: 5em;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #display {
+    width: 100%;
+    height: 30px;
+    margin-top: 0;
+  }
+
+  .buttons .result-btn {
+    width: 50%;
+    height: 30px;
+  }
+}
