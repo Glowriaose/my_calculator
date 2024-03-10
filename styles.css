@@ -84,12 +84,13 @@ body {
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-right: 2.5em;
   }
 
   #display {
-    width: 100%;
+    width: 80%;
     height: 30px;
-    margin-top: 0;
+    margin-inline: auto;
   }
 
   .buttons .result-btn {
